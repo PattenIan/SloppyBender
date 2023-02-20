@@ -7,7 +7,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Animator")]
-   public Animator anim;
+   //public Animator anim;
     float animVertical;
     float animHorizontal;
     public TextMeshProUGUI text;
@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        text.text = "Speed: " + MoveSpeed;
+        //text.text = "Speed: " + MoveSpeed;
         isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * .5f + .2f, whatIsGround);
 
         MyInput();
@@ -92,9 +92,9 @@ public class PlayerMovement : MonoBehaviour
 
         }
         animHorizontal = Mathf.Abs(rb.velocity.y);
-        anim.SetFloat("Horizontal", animHorizontal);
+      //  anim.SetFloat("Horizontal", animHorizontal);
         animVertical = Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.z);
-        anim.SetFloat("Vertical", animVertical);
+       // anim.SetFloat("Vertical", animVertical);
       
     }
     private void FixedUpdate()
