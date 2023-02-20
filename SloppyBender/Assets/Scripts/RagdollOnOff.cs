@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RagdollOnOff : MonoBehaviour
 {
-    [SerializeField] BoxCollider mainCollider;
+    [SerializeField] CapsuleCollider mainCollider;
     [SerializeField] GameObject rig;
     [SerializeField] Animator animator;
 
