@@ -18,7 +18,13 @@ public class RagdollOnOff : MonoBehaviour
 
     void Update()
     {
-        
+        if(Input.GetKey(KeyCode.J))
+        {
+            RagDollOff();
+        } else if(Input.GetKey(KeyCode.K)) 
+        { 
+            RagDollOn();
+        }
     }
 
     private void RagDollOn()
